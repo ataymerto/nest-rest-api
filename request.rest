@@ -1,0 +1,31 @@
+
+GET http://localhost:3000
+
+### FIND ALL
+GET http://localhost:3000/items
+
+### FIND ONE
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+  "name": "Item One",
+  "qty": 100,
+  "description": "Item one desc"
+}
+###
+GET http://localhost:3000/items/345645345
+
+###
+DELETE http://localhost:3000/items/1000
+
+
+###
+PUT http://localhost:3000/items/1000
+Content-Type: application/json
+
+{
+  "name": "Item One",
+  "qty": 100,
+  "description": "Item one desc"
+}
